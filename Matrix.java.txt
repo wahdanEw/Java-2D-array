@@ -1,0 +1,23 @@
+import java.util.Random;
+
+public class Matrix {
+
+	public static void main(String[] args) {
+		Random rnd = new Random();
+		int i, j;
+		int [][]matrix = new int[4][4];
+		
+		for (i=0; i<matrix.length; i++)
+		{
+			for (j=0; j<matrix[i].length; j++)
+			{
+				matrix[i][j] = rnd.nextInt(101);//Random numbers between 0-100
+				System.out.print("[" + matrix[i][j] + "]");
+				
+			}
+			System.out.println();
+		}
+
+		}
+
+}
